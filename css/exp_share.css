@@ -1,0 +1,130 @@
+.exp_title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 32px;
+    letter-spacing: 3.6px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.exp_card {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.exp_card:nth-child(2) {
+    background-color: #BF9797;
+    border: 1px solid #DFA9A9;
+}
+
+.exp_card:nth-child(3) {
+    background-color: #C2C39B;
+    border: 1px solid #E4E5BD;
+}
+
+.exp_card:nth-child(4) {
+    background-color: #97BFAB;
+    border: 1px solid #B9DFCD;
+}
+
+.exp_card_flex {
+    justify-content: center;
+}
+
+.exp_card_img {
+    margin: 100px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp_card_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.exp_card_text {
+    position: relative;
+    left: 100px;
+    margin-top: 50px;
+    letter-spacing: 0.5ex;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #fff;
+}
+
+.exp_card_title_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp_card_title_flex h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+}
+
+.exp_script span,
+.exp_card_title_flex span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.exp_card_title_flex span {
+    position: relative;
+    left: 50px;
+}
+
+.exp_script {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.exp_script span+span {
+    margin-top: 10px;
+}
+
+.score_flex {
+    margin: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.score_text {
+    letter-spacing: 0.5ex;
+    line-height: 1.5;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.score_text h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+}
+
+.score_text span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.score_text h3+span {
+    margin-top: 15px;
+}
+
+.score_text span+span {
+    margin-top: 10px;
+}
+
+.score_img img {
+    width: 100%;
+    vertical-align: middle;
+}
