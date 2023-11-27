@@ -1,0 +1,130 @@
+.news {
+    line-height: 1.5;
+}
+
+.news_flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_title {
+    font-size: 32px;
+    letter-spacing: 3.6px;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.news_tags {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news_tags .tags-button {
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    font-family: 'Noto Serif JP', serif;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.news_card_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.news_card_list .news_card {
+    font-family: 'Noto Serif JP', serif;
+    text-decoration: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E2;
+    margin: 40px 5px 0px;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media(width<=768px) {
+        flex: auto;
+    }
+}
+
+.news_card img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.card_title {
+    font-size: 18px;
+    padding: 10px 20px 0;
+    letter-spacing: 3.6px;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.card_date {
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #8D8D8D;
+    margin-bottom: 35px;
+}
+
+.card_more {
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #FF829F;
+    text-align: right;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+.news_page {
+    font-size: 18px;
+    letter-spacing: 1ex;
+    font-family: 'Noto Serif JP', serif;
+    color: #000;
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.news_page_flex {
+    justify-content: flex-end;
+}
+
+.news_page:first-child {
+    display: none;
+}
+
+.news_page:last-child {
+    /* display: none; */
+}
+
+.news_page_num {
+    font-size: 18px;
+    letter-spacing: 1ex;
+    font-family: 'Noto Serif JP', serif;
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

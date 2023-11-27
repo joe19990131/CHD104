@@ -1,0 +1,233 @@
+.page_title {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 32px;
+    letter-spacing: 3.6px;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.faq_advantage {
+    background: linear-gradient(to right, #10253F, 80%, #fff);
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.why_choice_text,
+.faq_advantage_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.why_choice_img,
+.faq_advantage_text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why_choice_text h3,
+.faq_advantage_text h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 3.6px;
+    box-sizing: border-box;
+}
+
+.faq_advantage_text h3 {
+    margin-top: 60px;
+    color: #fff;
+}
+
+.why_choice_text span,
+.faq_advantage_text span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.2ex;
+    box-sizing: border-box;
+    padding-bottom: 2ex;
+}
+
+.faq_advantage_text span {
+    color: #fff;
+}
+
+.why_choice_text h3+span,
+.faq_advantage_text h3+span {
+    margin-top: 40px;
+}
+
+.why_choice_img img,
+.faq_advantage_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.call_type,
+.why_choice {
+    margin-block: 50px;
+}
+
+.why_choice_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.why_choice_img {
+    position: relative;
+}
+
+.why_choice_img_flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.why_choice_img_flex span {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1ex;
+}
+
+.why_choice_img_flex span:nth-child(1) {
+    font-size: 24px;
+}
+
+.why_choice_img_flex span:nth-child(2) {
+    font-size: 32px;
+    color: #f00;
+}
+
+.faq_price {
+    background: linear-gradient(to right, #10253F, 80%, #fff);
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.faq_price_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 0.2ex;
+    margin-right: 6%;
+}
+
+.faq_price_text h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 32px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.faq_price_text span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-bottom: 2ex;
+}
+
+.faq_price_text h3+span {
+    margin-top: 40px;
+}
+
+.faq_price_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.call_flex {
+    justify-content: flex-end;
+}
+
+.call_title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 3.6px;
+    box-sizing: border-box;
+}
+
+.call_article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.call_article span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.2ex;
+    box-sizing: border-box;
+    padding-bottom: 2ex;
+}
+
+.call_img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.call_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.call_title+.call_article {
+    margin-top: 20px;
+}
+
+.call_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.call_btn_item {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.2ex;
+}
+
+.call_btn_item:hover {
+    background-color: #FF829F;
+    color: #fff;
+    transition: 1s;
+}

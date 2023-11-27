@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+    <style>
+        #feature {
+            width: 100%;
+            height: 600px;
+            background: url("../pic/sakura_banner.png"), linear-gradient(to bottom, #92BBFC, #fff);
+            background-position: right, top;
+            background-repeat: no-repeat, no-repeat;
+        }
+
+        .banner {
+            position: relative;
+        }
+
+        .banner_script {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: space-between;
+            height: 150px;
+            width: 100%;
+            top: 50%;
+            bottom: 50%;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .banner .banner_change {
+            position: relative;
+            width: 50px;
+            height: 150px;
+            background-color: #aaa;
+            border-radius: 2px;
+        }
+
+        .banner .change_left {
+            left: 30px;
+        }
+
+        .banner .change_right {
+            right: 30px;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        .left_arrow_up {
+            top: 35%;
+            transform: rotate(-60.5deg);
+        }
+
+        .left_arrow_down {
+            bottom: 35%;
+            transform: rotate(60.5deg);
+        }
+
+        .right_arrow_up {
+            top: 35%;
+            transform: rotate(60.5deg);
+        }
+
+        .right_arrow_down {
+            bottom: 35%;
+            transform: rotate(-60.5deg);
+        }
+
+        .banner_text {
+            font-family: 'Noto Serif JP', serif;
+            position: relative;
+            left: -15%;
+            text-align: left;
+            margin: auto;
+            font-size: 48px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div id="feature"></div>
+
+        <div class="banner_script">
+            <a href="#">
+                <div class="banner_change change_left">
+                    <div class="arrow left_arrow_up"></div>
+                    <div class="arrow left_arrow_down"></div>
+                </div>
+            </a>
+
+            <div class="banner_text">
+                <div>一緒に</div>
+                <div>日本語を学びましょう</div>
+            </div>
+
+            <a href="#">
+                <div class="banner_change change_right">
+                    <div class="arrow right_arrow_up"></div>
+                    <div class="arrow right_arrow_down"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
