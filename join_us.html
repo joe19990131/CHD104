@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 apply_flex">
                 <div class="col input_title">
-                    <h3>學生報名</h3>
+                    <h3>職位報名</h3>
                 </div>
                 <div class="col input_main">
                     <div class="row input_item">
@@ -82,44 +82,44 @@
                         <input id="email" class="col-8 col-md-8 col-lg-8 col-xl-8" type="email" placeholder="請輸入電子信箱"
                             required>
                     </div>
+
                     <div class="row input_item">
-                        <label for="goal" class="col-8 col-md-8 col-lg-8 col-xl-8">修課目的(選填)</label>
-                        <input id="goal" class="col-8 col-md-8 col-lg-8 col-xl-8" type="text" placeholder="請輸入修課目的">
-                    </div>
-                    <div class="row input_item">
-                        <label class="col-8 col-md-8 col-lg-8 col-xl-8"><span>*</span>報名班級</label>
+                        <label class="col-8 col-md-8 col-lg-8 col-xl-8"><span>*</span>應徵職位</label>
                         <div class="col-8 col-md-8 col-lg-8 col-xl-8 radio_flex">
                             <div class="radio_item">
                                 <div>
-                                    <input type="radio" name="school" id="school_1" required>
-                                    <label class="radio_item_box" for="school_1">
-                                        <label for="school_1" class="check_box">
+                                    <input type="radio" name="job_title" id="job_title_1" required>
+                                    <label class="radio_item_box" for="job_title_1">
+                                        <label for="job_title_1" class="check_box">
                                             <div class="check"></div>
                                         </label>
-                                        台北信義校
+                                        日文教師
                                     </label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="school" id="school_2" required>
-                                    <label class="radio_item_box" for="school_2">
-                                        <label for="school_2" class="check_box">
+                                    <input type="radio" name="job_title" id="job_title_2" required>
+                                    <label class="radio_item_box" for="job_title_2">
+                                        <label for="job_title_2" class="check_box">
                                             <div class="check"></div>
                                         </label>
-                                        高雄左營校
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="school" id="school_3" required>
-                                    <label class="radio_item_box" for="school_3">
-                                        <label for="school_3" class="check_box">
-                                            <div class="check"></div>
-                                        </label>
-                                        暑假日本合宿短期班
+                                        分校導師
                                     </label>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row input_item">
+                        <label for="tel" class="col-8 col-md-8 col-lg-8 col-xl-8"><span>*</span>自傳(上傳格式僅接受PPT檔案)</label>
+                        <div class="col-8 col-md-8 col-lg-8 col-xl-8">
+                            <div class="row file_flex">
+                                <input id="file" class="file_check" type="file" id="file" required>
+                                <label class="col-2 col-md-2 col-lg-2 col-xl-2 file_box" for="file">選擇檔案</label>
+                                <!-- <span id="file_name">選擇檔名</span> -->
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row input_item">
                         <div class="col-8 col-md-8 col-lg-8 col-xl-8 radio_flex">
                             <div class="radio_item">
@@ -145,6 +145,7 @@
             </div>
         </div>
     </div>
+
     <!-- 頁尾 -->
     <footer class="page_footer">
         <div class="container">

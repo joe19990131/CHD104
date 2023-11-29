@@ -90,13 +90,13 @@
     height: 20px;
 }
 
+.radio_item input {
+    display: none;
+}
+
 .radio_item input[type="radio"]:checked~.radio_item_box .check {
     display: block;
     background-color: #FF829F;
-}
-
-.radio_item input {
-    display: none;
 }
 
 .radio_flex .radio_item .radio_item_box {
@@ -138,4 +138,25 @@
 
 .ok_text span+span {
     padding: 10px;
+}
+
+.file_flex .file_check {
+    display: none;
+}
+
+.file_flex .file_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #FF829F;
+    color: #fff;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2ex;
+    line-height: 1.5;
+    border-radius: 5px;
+    cursor: pointer;
 }
