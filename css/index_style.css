@@ -11,7 +11,7 @@
 }
 
 .call_flex .rwd_flex_title .title,
-.about_flex .rwd_flex_title .title{
+.about_flex .rwd_flex_title .title {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -28,8 +28,9 @@
 
 .about_img div {
     position: absolute;
-    left: 25px;
-    top: 25px;
+    left: 15px;
+    top: auto;
+    bottom: auto;
 }
 
 .about_img img {
@@ -78,25 +79,33 @@
     margin-bottom: 1.25rem;
 }
 
-.call_btn {
-    justify-content: right;
-}
-
 .call_btn button {
     border: 1px solid #fff;
-    margin-left: 5px;
-    margin-top: 40px;
 }
 
-.call_img iframe{
+.call_btn button+button {
+    margin-left: 5px;
+}
+
+.call_img iframe {
     height: 100%;
     width: 100%;
     vertical-align: middle;
 }
 
-@media (min-width:768px) {}
+@media (min-width:768px) {
+    
+    .about_img div {
+        left: 50px;
+    }
+}
 
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    
+    .about_img div {
+        left: 80px;
+    }
+}
 
 @media (min-width:1200px) {
 
@@ -111,18 +120,21 @@
         display: inline-block;
     }
 
-    .rwd_flex_title{
+    .rwd_flex_title {
         display: none;
     }
 
     .about_img div {
         left: 100px;
-        top: 100px;
     }
 
     .about_flex div p span,
     .call_flex div p span {
         padding-top: 25px;
+    }
+
+    .call_flex div p span:nth-child(2) {
+        margin-bottom: 30px;
     }
 
     .news_flex .title {
@@ -148,7 +160,10 @@
     }
 
     .call_btn button {
-        margin-left: 20px;
-        margin-top: 80px;
+        margin-top: 20px;
+    }
+
+    .call_btn button+button {
+        margin-left: 10px;
     }
 }
