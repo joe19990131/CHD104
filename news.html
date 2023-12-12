@@ -74,25 +74,24 @@
                 <div class="col-9 col-md-9 col-lg-6 col-xl-6">
                     <div class="row row-cols-3">
                         <div class="col news_tags flex center_flex">
-                            <button class="tags-button title" onclick="">
+                            <button class="tags-button title" id="tags_1">
                                 分類一
                             </button>
                         </div>
                         <div class="col news_tags flex center_flex">
-                            <button class="tags-button title" onclick="">
+                            <button class="tags-button title" id="tags_2">
                                 分類二
                             </button>
                         </div>
                         <div class="col news_tags flex center_flex">
-                            <button class="tags-button title" onclick="">
+                            <button class="tags-button title" id="tags_3">
                                 分類三
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-12 col-xl-12 news_card_list">
-                    <div class="row row-cols-3 center_flex">
-                        <a href="news_content.html" class="col flex news_card">
+                    <div class="row row-cols-3" id="new_card_list">
                             <div class="news_card_img">
                                 <img src="pic/news_card.png" alt="">
                             </div>
@@ -163,14 +162,15 @@
                             <h3 class="script_font_jp">學習日語，暢遊日本！</h3>
                             <span class="script_font">2023/11/15</span>
                             <div class="card_more script_font_jp">MORE➤</div>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="row row-cols-3 news_page_flex">
-                        <a class="col news_page script_font_jp flex center_flex" href="#">上一頁</a>
-                        <div class="col news_page_num script_font_jp flex center_flex">第 1 頁</div>
-                        <a class="col news_page script_font_jp flex center_flex" href="#">下一頁</a>
+                    <div class="row row-cols-3" id="news_page_flex">
+                        <button class="col news_page script_font_jp flex center_flex" id="prevButton">上一頁</button>
+                        <div class="col news_page_num script_font_jp flex center_flex">第 <span id="news_page"></span> 頁
+                        </div>
+                        <button class="col news_page script_font_jp flex center_flex" id="nextButton">下一頁</button>
                     </div>
                 </div>
             </div>
@@ -205,6 +205,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="js/page.js"></script>
 </body>
 
 </html>

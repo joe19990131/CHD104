@@ -123,21 +123,19 @@
 }
 
 .news_page {
-    color: #000;
+    box-sizing: border-box;
     margin: 40px 0px;
-    text-decoration: none;
+    min-height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: transparent;
+    /* background-color: transparent; */
 }
 
-.news_page_flex {
-    justify-content: flex-end;
-}
-
-.news_page:first-child {
-    display: none;
-}
-
-.news_page:last-child {
-    /* display: none; */
+.news_page:hover {
+    background-color: #FF829F;
+    color: #fff;
+    transition: 1s;
 }
 
 .news_page_num {

@@ -33,6 +33,19 @@
     bottom: auto;
 }
 
+.about_img div span {
+    font-size: 1rem;
+    @media (min-width:768px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width:1024px) {
+        font-size: 1.8rem;
+    }
+    @media (min-width:1200px) {
+        font-size: 2rem;
+    }
+}
+
 .about_img img {
     width: 100%;
     vertical-align: middle;
@@ -94,14 +107,14 @@
 }
 
 @media (min-width:768px) {
-    
+
     .about_img div {
         left: 50px;
     }
 }
 
 @media (min-width:1024px) {
-    
+
     .about_img div {
         left: 80px;
     }
