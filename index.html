@@ -95,31 +95,7 @@
     </div>
     <!-- 最新消息 -->
     <div class="container">
-        <div class="row news_flex column_flex">
-            <div class="col col-12 title">
-                <h3>最新消息</h3>
-            </div>
-            <a href="news_content.html" class="col col-11 news_item flex script_font">
-                <h3 class="flex center_flex">分類一</h3>
-                <p class="flex center_flex">夏日特別優惠！學習日語，暢遊日本！</p>
-            </a>
-            <a href="news_content.html" class="col col-11 news_item flex script_font">
-                <h3 class="flex center_flex">分類一</h3>
-                <p class="flex center_flex">JLPT考試準備課程現開始報名！專業教學，模擬考試，彈性學習時間，與同學共同提升日語水平。</p>
-            </a>
-            <a href="news_content.html" class="col col-11 news_item flex script_font">
-                <h3 class="flex center_flex">分類一</h3>
-                <p class="flex center_flex">免費試聽課程，歡迎新生加入！</p>
-            </a>
-            <a href="news_content.html" class="col col-11 news_item flex script_font">
-                <h3 class="flex center_flex">分類一</h3>
-                <p class="flex center_flex">日文寫作比賽，展現你的創意！</p>
-            </a>
-            <div class="col col-11 news_item_more_flex flex">
-                <a href="news.html" class="btn_style btn_hover script_font flex center_flex">
-                    MORE➤
-                </a>
-            </div>
+        <div class="row news_flex column_flex" id="news_flex">
         </div>
     </div>
 
@@ -133,16 +109,16 @@
                 <div class="col col-7">
                     <h3 class="title">聯絡方式</h3>
                     <div class="call_btn flex">
-                        <button class="btn_style btn_hover script_font white_font flex center_flex">台北校</button>
-                        <button class="btn_style btn_hover script_font white_font flex center_flex">高雄校</button>
+                        <button class="btn_style btn_hover script_font white_font flex center_flex" id="btn_nouth">台北校</button>
+                        <button class="btn_style btn_hover script_font white_font flex center_flex" id="btn_south">高雄校</button>
                     </div>
                     <p class="script_font flex column_flex">
-                        <span>電話:03-0000000</span>
-                        <span>地址:台北市信義區OO路OO巷OO號3F</span>
+                        <span id="call_tel">電話:02-0000000</span>
+                        <span id="call_address">地址:台北市信義區OO路OO巷OO號3F</span>
                     </p>
                 </div>
                 <div class="col col-5 col-lg-4 call_img flex center_flex">
-                    <iframe
+                    <iframe id="call_iframe"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28937.993425568162!2d121.19206371562498!3d24.957635500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1700481215188!5m2!1szh-TW!2stw"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -179,7 +155,7 @@
         </div>
     </footer>
 
-    <script></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

@@ -80,7 +80,7 @@ function itemcreate(currentPageData) {
 
         // 設定連結
         var card_link = document.createElement('a');
-        card_link.href = item.html;
+        card_link.href = "news_content.html?id="+item.id;
         card_link.classList.add('col', 'flex', 'news_card');
 
         // 設定圖片框
@@ -150,7 +150,20 @@ function pagebtn(currentpage, tag) {
 
 // 初始化顯示所有項目
 document.addEventListener('DOMContentLoaded', function () {
-    // Your initialization code
+
+    // 獲取所有沒有 "news_card" 類別的 <a> 標籤
+    const linksWithoutNewsCard = document.querySelectorAll('a:not(.news_card)');
+
+    // 設置每個標籤的點擊事件處理函數
+    linksWithoutNewsCard.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // 清除 localStorage
+            localStorage.clear();
+
+            // 這裡可以添加其他處理代碼，例如導航到新的頁面等
+        });
+    });
+    // localStorage.clear();
     init();
     tags(save_tag, currentPage);
 });
@@ -174,3 +187,4 @@ document.getElementById('tags_2').addEventListener('click', function () {
 document.getElementById('tags_3').addEventListener('click', function () {
     tags('分類三', 1);
 });
+

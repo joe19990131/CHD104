@@ -24,11 +24,11 @@
 <body>
     <!-- 導覽列 -->
     <nav class="page_nav">
-        <a href="index.html" class="nav_logo">
+        <a href="index.html" class="nav_logo flex">
             <img src="pic/sakura_logo_nav.png">
         </a>
         <input type="checkbox" name="" id="nav_btn">
-        <label class="nav_btn" for="nav_btn">
+        <label class="nav_btn flex" for="nav_btn">
             <img src="pic/nav_btn.png">
         </label>
         <ul class="nav_link_list">
@@ -67,39 +67,28 @@
     </div>
 
     <!-- 消息內頁 -->
-    <div class="news">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
-                <div class="col news_title">最新消息</div>
-                <header class="col content_title">夏日特別優惠！學習日語，暢遊日本！</header>
-                <div class="col content_introduction">
-                    夏日特別優惠，讓您既能學習日語，又能暢遊日本！我們誠摯地邀請您參加我們的夏季學習活動，這是一個難得的機會，讓您掌握日語技能，同時體驗美麗的日本文化和風景。
-                </div>
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                        <div class="col content_img">
-                            <img src="pic/news-content-1.png">
-                        </div>
-                        <div class="col content_img">
-                            <img src="pic/news-content-2.png">
-                        </div>
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col title flex center_flex script_top">最新消息</div>
+            <header class="col title flex center_flex script_top" id="content_title">
+            </header>
+            <div class="col script_font script_top" id="content_header">
+            </div>
+            <div class="col">
+                <div class="row row-cols-2">
+                    <div class="col content_img" id="content_img_1">
+                    </div>
+                    <div class="col content_img" id="content_img_2">
                     </div>
                 </div>
-                <div class="col content-main">
-                    <span>活動亮點：</span>
-                    <ul>
-                        <li>專業教師指導：我們的專業教師團隊將為您提供優質的日語教育，從基礎到高級水平，讓您輕鬆學習。</li>
-                        <li>文化體驗：除了學習日語，您還可以參加文化體驗活動，如茶道、日本料理烹飪課、傳統藝術和工藝品製作等，深入了解日本文化。</li>
-                        <li>旅遊導覽：我們將組織精彩的旅遊導覽，帶您參觀日本的名勝古跡，探索城市風光，品嚐美食，並與當地居民互動。</li>
-                    </ul>
-                    <span>別錯過這個夏季學習之旅的機會，為自己打造難以忘懷的回憶！我們期待著與您一起度過充實的夏天，學習日語，暢遊日本。立即報名參加吧！</span>
-                </div>
-                <div class="col">
-                    <div class="row news_back_flex">
-                        <a class="col-2 col-md-2 col-lg-2 col-xl-2 news_back" href="news.html" title="回到最新消息">
-                            回到最新消息
-                        </a>
-                    </div>
+            </div>
+            <div class="col script_font content-main" id="content_main">
+            </div>
+            <div class="col">
+                <div class="row flex center_flex">
+                    <a class="col-3 script_font btn_style flex center_flex news_back" href="news.html" title="回到最新消息">
+                        回到最新消息
+                    </a>
                 </div>
             </div>
         </div>
@@ -133,6 +122,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="js/news_content.js"></script>
 </body>
 
 </html>
