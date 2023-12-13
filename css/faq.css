@@ -1,86 +1,88 @@
-.page_title {
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-size: 32px;
-    letter-spacing: 3.6px;
-    font-family: 'Noto Serif JP', serif;
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 500;
+.script_top {
+    padding-block: 40px;
 }
 
-.faq_advantage {
-    background: linear-gradient(to right, #10253F, 80%, #fff);
+.font_top {
+    padding-top: 40px;
+    @media (min-width:1024px) {
+        padding-top: 0px;
+    }
+}
+
+.deep_bg {
+    background-color: #10253F;
     background-position: left;
     background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
-    margin-top: 40px;
+
+    @media (min-width:768px) {
+        background: linear-gradient(to right, #10253F, 80%, #fff);
+    }
 }
 
-.why_choice_text,
-.faq_advantage_text {
-    display: flex;
-    flex-wrap: wrap;
+.space_between_flex,
+.call_flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.why_choice_flex {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        align-items: stretch;
+    }
 }
 
-.why_choice_img,
-.faq_advantage_text {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.why_choice_text h3,
-.faq_advantage_text h3 {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.5;
-    letter-spacing: 3.6px;
-    box-sizing: border-box;
-}
-
-.faq_advantage_text h3 {
-    margin-top: 60px;
-    color: #fff;
-}
-
+.call_article span,
+.faq_price_text span,
 .why_choice_text span,
 .faq_advantage_text span {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.2ex;
-    box-sizing: border-box;
-    padding-bottom: 2ex;
+    padding-top: 20px;
 }
 
-.faq_advantage_text span {
-    color: #fff;
+.faq_price_img,
+.faq_advantage_img {
+    position: relative;
 }
 
-.why_choice_text h3+span,
-.faq_advantage_text h3+span {
-    margin-top: 40px;
-}
-
-.why_choice_img img,
+.faq_price_img img,
 .faq_advantage_img img {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    bottom: 0px;
+
+    @media (min-width:768px) {
+        position: relative;
+        bottom: -40px;
+    }
+
+    @media (min-width:1024px) {
+        position: absolute;
+        bottom: -40px;
+    }
+}
+
+.call_img iframe {
+    align-self: flex-start;
+    height: 100%;
     width: 100%;
     vertical-align: middle;
 }
 
-.call_type,
-.why_choice {
-    margin-block: 50px;
-}
-
-.why_choice_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+.why_choice_img img {
+    width: 100%;
+    vertical-align: middle;
 }
 
 .why_choice_img {
@@ -88,146 +90,57 @@
 }
 
 .why_choice_img_flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 35%;
-    left: 30%;
-}
+    top: 45%;
+    left: 27%;
 
-.why_choice_img_flex span {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.1ex;
+    @media (min-width:768px) {
+        left: 30%;
+    }
 }
 
 .why_choice_img_flex span:nth-child(1) {
-    font-size: 24px;
+    font-size: 1rem;
+    @media (min-width:768px) {
+        font-size: 2.25rem;
+    }
+
+    @media (min-width:1024px) {
+        font-size: 1.5rem;
+    }
 }
 
 .why_choice_img_flex span:nth-child(2) {
-    font-size: 32px;
     color: #f00;
+    font-size: 1.5rem;
+    @media (min-width:768px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width:1024px) {
+        font-size: 2rem;
+    }
 }
 
-.faq_price {
-    background: linear-gradient(to right, #10253F, 80%, #fff);
-    background-position: left;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.faq_price_text {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    color: #fff;
-    line-height: 1.5;
-    letter-spacing: 0.2ex;
-    margin-right: 6%;
-}
-
-.faq_price_text h3 {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    font-size: 32px;
-    box-sizing: border-box;
-    margin-top: 40px;
-}
-
-.faq_price_text span {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-    padding-bottom: 2ex;
-}
-
-.faq_price_text h3+span {
-    margin-top: 40px;
-}
-
-.faq_price_img img {
-    width: 100%;
-    vertical-align: middle;
-}
-
-.call_flex {
-    justify-content: flex-end;
-}
-
-.call_title {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.5;
-    letter-spacing: 3.6px;
-    box-sizing: border-box;
-}
-
-.call_article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.call_article span {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.2ex;
-    box-sizing: border-box;
-    padding-bottom: 2ex;
-}
-
-.call_img {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.call_img img {
-    width: 100%;
-    vertical-align: middle;
-}
-
-.call_title+.call_article {
+.call_btn .call_btn_item {
+    background-color: #10253F;
+    border: transparent;
     margin-top: 20px;
 }
 
-.call_btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-}
-
-.call_btn_item {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 110px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid #fff;
+.call_btn_item+.call_btn_item {
     margin-left: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.2ex;
 }
 
-.call_btn_item:hover {
+.call_btn .call_btn_item:hover {
     background-color: #FF829F;
-    color: #fff;
     transition: 1s;
+}
+
+.call_article {
+    margin-bottom: 20px;
+
+    @media (min-width:768px) {
+        margin-bottom: 0px;
+    }
 }
